@@ -3,7 +3,6 @@ from models import Nomina, Empleado, db
 from datetime import datetime
 from utils import calcular_salario, generar_desprendible
 from correo import enviar_correo
-# ... (vistas y rutas del módulo de nómina)
 
 nomina_bp = Blueprint('nomina', __name__, url_prefix='/api/nomina')
 
