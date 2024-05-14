@@ -1,4 +1,3 @@
-# utils.py
 import pdfkit  # Librería para generar PDFs desde HTML
 import smtplib  # Librería para enviar correos electrónicos
 from email.mime.text import MIMEText
