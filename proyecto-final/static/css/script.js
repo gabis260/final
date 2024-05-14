@@ -2,8 +2,6 @@ function iniciarSesion() {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
   
-    // Realizar una solicitud al backend para iniciar sesión
-    // Puedes utilizar fetch o XMLHttpRequest para hacer la solicitud
     fetch('/api/login', {
       method: 'POST',
       headers: {
@@ -13,7 +11,6 @@ function iniciarSesion() {
     })
     .then(response => response.json())
     .then(data => {
-      // Manejar la respuesta del backend
       console.log(data);
     })
     .catch(error => {
@@ -22,13 +19,11 @@ function iniciarSesion() {
   }
   
   function pagarNomina() {
-    // Realizar una solicitud al backend para pagar la nómina
     fetch('/api/nomina/pago', {
       method: 'POST'
     })
     .then(response => response.json())
     .then(data => {
-      // Manejar la respuesta del backend
       console.log(data);
     })
     .catch(error => {
